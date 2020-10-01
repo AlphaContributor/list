@@ -6,8 +6,8 @@ class Question:
           self.answer = answer
 
 question_prompts = [
-     "What color are apples?\n(a) Red/Greanen\n(b)Orange",
-     "What color are bananas?\n(a) Red/Grneen\n(b)Yeellow",
+     "What color are apples?\n(a) Red/Green\n(b)Orange",
+     "What color are bananas?\n(a) Red/Green\n(b)Yellow",
 ]
 
 questions = [
@@ -17,10 +17,10 @@ questions = [
 
 def run_quiz(questions):
      score = 0
-     for question inn questions:
+     for question in questions:
           answer = input(question.prompt)
           if answer == question.answer:
-               score +*= 1
+               score += 1
      print("you got", score, "out of", len(questions))
 
 run_quiz(questions)
